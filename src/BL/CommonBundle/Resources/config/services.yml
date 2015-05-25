@@ -1,0 +1,9 @@
+services:
+  bl_commonbundle.model.basemanager:
+      class: BL\CommonBundle\Model\BaseManager
+      arguments: [@doctrine.orm.entity_manager, @event_dispatcher]
+
+  bl_commonbundle.event.bleventsubscriber:
+    class: BL\CommonBundle\Event\BLEventSubscriber
+    tags:
+        - { name: kernel.event_subscriber }

@@ -1,0 +1,4 @@
+services:
+#    bl_book.example:
+#        class: BL\BookBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

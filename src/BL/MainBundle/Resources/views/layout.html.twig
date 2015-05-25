@@ -1,0 +1,42 @@
+{% spaceless %}
+    <!DOCTYPE html>
+    <!--[if lt IE 7]>
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>{% block title %}BL-супер библиотека для сборных книг{% endblock %}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description"
+              content="{% block description %}BL-супер библиотека для сборных книг{% endblock %}"/>
+        <meta name="keywords" content="{% block keywords %}BL{% endblock %}"/>
+        <link rel="stylesheet"
+              href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic'
+              type='text/css'>
+        {% block stylesheet %}
+            <link rel="stylesheet" href="/css/style.css" type="text/css" media="all"/>
+        {% endblock stylesheet %}
+        {% block javascript_head %}
+        {% endblock javascript_head %}
+        {% block css %}
+        {% endblock %}
+    </head>
+
+    <body>
+    {% block center %}
+    {% endblock center %}
+    {% block javascript %}
+        <script type="text/javascript" src="/bundles/blmain/js/jquery-2.1.3.min.js"></script>
+        {#{% if app.environment == 'dev' %}#}
+        {#<script type="text/javascript" src="/js/debug.js"></script>#}
+        {#{% endif %}#}
+    {% endblock javascript %}
+    </body>
+    </html>
+{% endspaceless %}

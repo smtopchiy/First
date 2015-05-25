@@ -1,0 +1,32 @@
+bl_main:
+    resource: "@BLMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_statistic:
+    resource: "@BLStatisticBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_admin:
+    resource: "@BLAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_book:
+    resource: "@BLBookBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_common:
+    resource: "@BLCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_structure:
+    resource: "@BLStructureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bl_user:
+    resource: "@BLUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+

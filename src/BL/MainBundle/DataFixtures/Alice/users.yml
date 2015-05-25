@@ -1,0 +1,12 @@
+BL\UserBundle\Entity\User:
+  user1:
+    username: <firstName()> <lastName()>
+    email: admin1@example.org
+    plainPassword: admin1
+    roles: [ROLE_SUPER_ADMIN]
+  user{2..100}:
+    username: <firstName()> <lastName()>
+    email: <email()>
+    plainPassword: <current()>
+    roles: [ROLE_USER]
+

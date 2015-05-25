@@ -1,0 +1,3 @@
+bl_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BLMainBundle:Default:index }
